@@ -9,7 +9,7 @@ require 'componentize/style/include_style'
 module Componentize
   class IncludeStyleBuilder
     def initialize(mixin, *args)
-      @mixin = mixin.to_str
+      @mixin = mixin.to_sym
       @args = args
     end
 

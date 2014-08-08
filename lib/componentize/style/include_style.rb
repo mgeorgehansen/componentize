@@ -7,7 +7,7 @@
 module Componentize
   class IncludeStyle
     def initialize(mixin, *args)
-      @mixin = mixin.to_str
+      @mixin = mixin.to_sym
       @kwargs = args.last.is_a?(Hash) ? args.pop : {}
       @args = args.map { |a| a.to_s }
     end
